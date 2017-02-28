@@ -1,0 +1,9 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Timing Analysis
+Start to record tcl script...
+Finished recording TCL script.
+
+Launching: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\timing.exe -prj "hw04" -tti "hw04.tt4" -gui -dir "u:\personal\hw4"'
+

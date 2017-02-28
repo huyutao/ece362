@@ -1,0 +1,5 @@
+$DEVICE         p22v10g    fit    untitled.tt3
+$PINS   10  OUT7:21   OUT6:20   OUT5:19   OUT4:18   OUT3:17   OUT2:16   OUT1:15   
+OUT0:14   input_clock:1   data:2   
+--------------------------------------------------------------
+

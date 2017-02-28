@@ -1,0 +1,35 @@
+//
+// Software Version :  ispLEVER Classic 1.7.00.05.28.13  
+// Project Name	    :  hw04
+// Targeted Device  :  LC4032C-25T44C
+// Date             :  Thu Sep 29 23:09:20 2016
+//
+                      PA2          IN            2
+                      PA4          IN            3
+                      PA6          IN            4
+                   GNDIO0          SYS           5
+                   VCCIO0          SYS           6
+                      VCC          SYS           11
+                      GND          SYS           12
+                       RW          IN            17
+                       CE          OUT           18
+                       OE          OUT           19
+                       WE          OUT           20
+                      LA8          OUT           21
+                     LA10          OUT           22
+                     LA12          OUT           24
+                     LA14          OUT           25
+                      PA1          IN            26
+                   GNDIO1          SYS           27
+                   VCCIO1          SYS           28
+                      PA3          IN            29
+                      PA5          IN            30
+                      PA7          IN            31
+                      VCC          SYS           33
+                      GND          SYS           34
+                     ECLK          IN            39
+                      LA9          OUT           40
+                     LA11          OUT           41
+                     LA13          OUT           42
+                     LA15          OUT           43
+                      PA0          IN            44

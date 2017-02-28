@@ -1,0 +1,20 @@
+MODULE MemExpPri2
+
+TITLE 'Memory Expansion - PriOut 2'
+
+DECLARATIONS
+PA0..PA7 pin;  " MCU Port A
+ECLK pin; " MCU E-clock
+RW pin; " MCU Read/Write
+!CE, !OE, !WE pin istype 'com';
+LA8..LA15 pin istype 'reg_D'; " demultiplexed address
+
+EQUATIONS
+[LA8..LA15].D = [PA0..PA7];
+[LA8..LA15].CLK = ECLK;
+CE = !LA15.Q & ECLK; " map SRAM into lower half of address space
+OE = RW & ECLK;
+WE = !RW & ECLK;
+
+END
+

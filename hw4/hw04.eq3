@@ -1,0 +1,39 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+CE = !( ECLK & !LA15.Q ) ; (1 pterm, 2 signals)
+
+LA10.D = PA2 ; (1 pterm, 1 signal)
+LA10.C = ECLK ; (1 pterm, 1 signal)
+
+LA11.D = PA3 ; (1 pterm, 1 signal)
+LA11.C = ECLK ; (1 pterm, 1 signal)
+
+LA12.D = PA4 ; (1 pterm, 1 signal)
+LA12.C = ECLK ; (1 pterm, 1 signal)
+
+LA13.D = PA5 ; (1 pterm, 1 signal)
+LA13.C = ECLK ; (1 pterm, 1 signal)
+
+LA14.D = PA6 ; (1 pterm, 1 signal)
+LA14.C = ECLK ; (1 pterm, 1 signal)
+
+LA15.D = PA7 ; (1 pterm, 1 signal)
+LA15.C = ECLK ; (1 pterm, 1 signal)
+
+LA8.D = PA0 ; (1 pterm, 1 signal)
+LA8.C = ECLK ; (1 pterm, 1 signal)
+
+LA9.D = PA1 ; (1 pterm, 1 signal)
+LA9.C = ECLK ; (1 pterm, 1 signal)
+
+OE = !( ECLK & RW ) ; (1 pterm, 2 signals)
+
+WE = !( ECLK & !RW ) ; (1 pterm, 2 signals)
+

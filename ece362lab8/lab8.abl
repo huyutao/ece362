@@ -1,0 +1,17 @@
+MODULE lab8
+
+TITLE 'lab8'
+
+DECLARATIONS
+input_clock pin 1;
+data pin 2;
+OUT0..OUT7 pin 14..21 istype 'reg';
+
+EQUATIONS
+OUT0 := data;
+[OUT1..OUT7] := [OUT0..OUT6];
+[OUT0..OUT7].clk = input_clock;
+
+
+
+END

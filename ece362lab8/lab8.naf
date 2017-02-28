@@ -1,0 +1,10 @@
+OUT0		o
+OUT1		o
+OUT2		o
+OUT3		o
+OUT4		o
+OUT5		o
+OUT6		o
+OUT7		o
+input_clock		i
+data		i

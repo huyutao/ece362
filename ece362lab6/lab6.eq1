@@ -1,0 +1,124 @@
+ispLEVER Classic 1.7.00.05.28.13 Linked Equations File
+Copyright(C), 1992-2013, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design lab6 created Wed Oct 05 19:35:37 2016
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   tens_out 
+   1/1        1        1    Pin   dp_out 
+   4/6        4        1    Pin   a 
+   4/4        4        1    Pin   b 
+   4/5        4        1    Pin   c 
+   4/5        4        1    Pin   d 
+   3/5        4        1    Pin   e 
+   3/4        4        1    Pin   f 
+   3/5        4        1    Pin   g 
+   1/1        1        1    Pin   irq.AR 
+   1          0        1    Pin   irq.D 
+   1/1        1        1    Pin   irq.C 
+=========
+  30/38         Best P-Term Total: 30
+                       Total Pins: 18
+                      Total Nodes: 0
+            Average P-Term/Output: 2
+
+
+Equations:
+
+tens_out = (!tens_in);
+
+dp_out = (!dp_in);
+
+a = (!D3 & D2 & !D1 & !D0
+     # D3 & !D2 & D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # D3 & D2 & !D1 & D0);
+
+b = (!D3 & !D1 & D0
+     # D3 & D1 & D0
+     # D3 & D2 & !D0
+     # D2 & D1 & !D0);
+
+c = (!D3 & !D2 & !D1 & D0
+     # !D3 & !D2 & D1 & !D0
+     # D3 & D2 & !D0
+     # D3 & D2 & D1);
+
+d = (!D3 & D2 & !D1 & !D0
+     # D3 & !D2 & D1 & !D0
+     # !D2 & !D1 & D0
+     # D2 & D1 & D0);
+
+e = (D3 & !D2 & !D1 & D0
+     # !D3 & D2 & !D1
+     # !D3 & D1 & D0);
+
+f = (D3 & D2 & !D1 & D0
+     # !D3 & !D2 & D1
+     # !D3 & D1 & D0);
+
+g = (D3 & D2 & !D1 & !D0
+     # !D3 & D2 & D1 & D0
+     # !D3 & !D2 & !D1);
+
+irq.AR = (iclr);
+
+irq.D = (1);
+
+irq.C = (ireq);
+
+
+Reverse-Polarity Equations:
+
+!tens_out = (tens_in);
+
+!dp_out = (dp_in);
+
+!a = (D3 & !D2 & !D1
+     # !D3 & D2 & D0
+     # D2 & D1
+     # !D3 & D1
+     # !D2 & !D0
+     # D3 & !D0);
+
+!b = (D3 & !D1 & D0
+     # !D3 & D1 & D0
+     # !D3 & !D1 & !D0
+     # !D2 & !D0);
+
+!c = (D2 & !D1 & D0
+     # !D2 & !D1 & !D0
+     # !D2 & D1 & D0
+     # D3 & !D2
+     # !D3 & D2);
+
+!d = (D3 & !D1 & !D0
+     # D2 & D1 & !D0
+     # !D3 & !D2 & !D0
+     # D2 & !D1 & D0
+     # !D2 & D1 & D0);
+
+!e = (!D2 & !D0
+     # !D3 & !D2 & !D1
+     # D3 & D2
+     # D3 & D1
+     # D1 & !D0);
+
+!f = (!D2 & !D1
+     # !D3 & !D1
+     # D3 & D1
+     # D2 & !D0);
+
+!g = (!D3 & D2 & !D0
+     # D2 & !D1 & D0
+     # D3 & D1
+     # !D2 & D1
+     # D3 & !D2);
+
+!irq.AR = (!iclr);
+
+!irq.C = (!ireq);
+

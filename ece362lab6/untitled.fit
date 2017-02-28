@@ -1,0 +1,6 @@
+$DEVICE         p22v10g    fit    untitled.tt3
+$PINS   18  g:22   f:21   e:20   d:19   c:18   b:17   a:16   
+irq:23   dp_out:15   tens_out:14   D3:7   D2:6   D1:5   D0:4   
+ireq:1   iclr:8   dp_in:3   tens_in:2   
+--------------------------------------------------------------
+

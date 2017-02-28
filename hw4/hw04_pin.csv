@@ -1,0 +1,50 @@
+ ispLEVER Classic 1.7.00.05.28.13 Fitter Report File 
+Project Name,hw04
+Project Path,U:\Personal\hw4
+Project Fitted on,Thu Sep 29 23:09:20 2016
+
+Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name
+1,TDI,-,,,,,
+2,I_O,0,A5,,LVCMOS18,Input,PA2
+3,I_O,0,A6,,LVCMOS18,Input,PA4
+4,I_O,0,A7,,LVCMOS18,Input,PA6
+5,GNDIO0,-,,,,,
+6,VCCIO0,-,,,,,
+7,I_O,0,A8,,,,
+8,I_O,0,A9,,,,
+9,I_O,0,A10,,,,
+10,TCK,-,,,,,
+11,VCC,-,,,,,
+12,GND,-,,,,,
+13,I_O,0,A12,,,,
+14,I_O,0,A13,,,,
+15,I_O,0,A14,,,,
+16,I_O,0,A15,,,,
+17,INCLK2,1,,*,LVCMOS18,Input,RW
+18,I_O,1,B0,,LVCMOS18,Output,CE
+19,I_O,1,B1,,LVCMOS18,Output,OE
+20,I_O,1,B2,,LVCMOS18,Output,WE
+21,I_O,1,B3,,LVCMOS18,Output,LA8
+22,I_O,1,B4,,LVCMOS18,Output,LA10
+23,TMS,-,,,,,
+24,I_O,1,B5,,LVCMOS18,Output,LA12
+25,I_O,1,B6,,LVCMOS18,Output,LA14
+26,I_O,1,B7,,LVCMOS18,Input,PA1
+27,GNDIO1,-,,,,,
+28,VCCIO1,-,,,,,
+29,I_O,1,B8,,LVCMOS18,Input,PA3
+30,I_O,1,B9,,LVCMOS18,Input,PA5
+31,I_O,1,B10,,LVCMOS18,Input,PA7
+32,TDO,-,,,,,
+33,VCC,-,,,,,
+34,GND,-,,,,,
+35,I_O,1,B12,,,,
+36,I_O,1,B13,,,,
+37,I_O,1,B14,,,,
+38,I_O/OE,1,B15,,,,
+39,INCLK0,0,,,LVCMOS18,Input,ECLK
+40,I_O/OE,0,A0,,LVCMOS18,Output,LA9
+41,I_O,0,A1,,LVCMOS18,Output,LA11
+42,I_O,0,A2,,LVCMOS18,Output,LA13
+43,I_O,0,A3,,LVCMOS18,Output,LA15
+44,I_O,0,A4,,LVCMOS18,Input,PA0

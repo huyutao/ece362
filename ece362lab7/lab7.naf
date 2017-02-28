@@ -1,0 +1,12 @@
+LED0		o
+LED1		o
+LED2		o
+LED3		o
+LED4		o
+LED5		o
+LED6		o
+LED7		o
+LED8		o
+LED9		o
+input_clock		i
+data		i

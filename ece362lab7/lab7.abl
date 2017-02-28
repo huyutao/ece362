@@ -1,0 +1,18 @@
+MODULE lab7
+
+TITLE 'lab7'
+
+DECLARATIONS
+input_clock pin 1;
+data pin 2;
+!LED0..!LED9 pin 14..23 istype 'reg';
+
+EQUATIONS
+LED0 := data;
+[LED1..LED9] := [LED0..LED8];
+[LED0..LED9].clk = input_clock;
+
+
+
+END
+

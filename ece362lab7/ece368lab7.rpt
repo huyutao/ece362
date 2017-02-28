@@ -1,0 +1,202 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'lab7'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : ece368lab7.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : ece368lab7.rpt
+    Programmer load file : ece368lab7.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+LED0.D   = (  !data ); " ISTYPE 'BUFFER'
+LED0.C   = (  input_clock );
+
+LED1.D   = (  LED0.Q ); " ISTYPE 'BUFFER'
+LED1.C   = (  input_clock );
+
+LED2.D   = (  LED1.Q ); " ISTYPE 'BUFFER'
+LED2.C   = (  input_clock );
+
+LED3.D   = (  LED2.Q ); " ISTYPE 'BUFFER'
+LED3.C   = (  input_clock );
+
+LED4.D   = (  LED3.Q ); " ISTYPE 'BUFFER'
+LED4.C   = (  input_clock );
+
+LED5.D   = (  LED4.Q ); " ISTYPE 'BUFFER'
+LED5.C   = (  input_clock );
+
+LED6.D   = (  LED5.Q ); " ISTYPE 'BUFFER'
+LED6.C   = (  input_clock );
+
+LED7.D   = (  LED6.Q ); " ISTYPE 'BUFFER'
+LED7.C   = (  input_clock );
+
+LED8.D   = (  LED7.Q ); " ISTYPE 'BUFFER'
+LED8.C   = (  input_clock );
+
+LED9.D   = (  LED8.Q ); " ISTYPE 'BUFFER'
+LED9.C   = (  input_clock );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+             input_clock |  1                    24  | Vcc                     
+                         |                           |
+                    data |  2                    23  | LED9                    
+                         |                           |
+                         |  3                    22  | LED8                    
+                         |                           |
+                         |  4                    21  | LED7                    
+                         |                           |
+                         |  5                    20  | LED6                    
+                         |                           |
+                         |  6                    19  | LED5                    
+                         |                           |
+                         |  7                    18  | LED4                    
+                         |                           |
+                         |  8                    17  | LED3                    
+                         |                           |
+                         |  9                    16  | LED2                    
+                         |                           |
+                         | 10                    15  | LED1                    
+                         |                           |
+                         | 11                    14  | LED0                    
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      2      |   10 ( 83 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |     10      |    0 (  0 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |     10      |    0 (  0 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 5
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+LED0.D                                   |   14     |   1   |   8   |   7
+LED1.D                                   |   15     |   1   |  10   |   9
+LED2.D                                   |   16     |   1   |  12   |  11
+LED3.D                                   |   17     |   1   |  14   |  13
+LED4.D                                   |   18     |   1   |  16   |  15
+LED5.D                                   |   19     |   1   |  16   |  15
+LED6.D                                   |   20     |   1   |  14   |  13
+LED7.D                                   |   21     |   1   |  12   |  11
+LED8.D                                   |   22     |   1   |  10   |   9
+LED9.D                                   |   23     |   1   |   8   |   7
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+data                                     |    2     | INPUT
+input_clock                              |    1     | CLK/IN
+
+
+                                                                      Page 6
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Tue Oct 25 23:39:53 2016
+
+lab7
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    3  |  INPUT |      -      |    -   
+    4  |  INPUT |      -      |    -   
+    5  |  INPUT |      -      |    -   
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    8  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   

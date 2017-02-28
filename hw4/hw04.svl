@@ -1,0 +1,10 @@
+Part Number: LC4032C-25T44C
+C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JPVS -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_epvs.svf" -lever
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JPVS -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_epvs.svf" -lever
+svf file '"U:\Personal\hw4\hw04_epvs.svf"' is generated successfully
+C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JPV -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_epv.svf" -lever
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JPV -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_epv.svf" -lever
+svf file '"U:\Personal\hw4\hw04_epv.svf"' is generated successfully
+C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JV -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_v.svf" -lever
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4032C-XXT44 -op JV -if hw04.jed -oft -svf -of "U:\Personal\hw4\hw04_v.svf" -lever
+svf file '"U:\Personal\hw4\hw04_v.svf"' is generated successfully

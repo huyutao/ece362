@@ -1,0 +1,5 @@
+$DEVICE         p22v10g    fit  ece368lab7.tt3
+$PINS   12  LED9:23   LED8:22   LED7:21   LED6:20   LED5:19   LED4:18   LED3:17   
+LED2:16   LED1:15   LED0:14   input_clock:1   data:2   
+--------------------------------------------------------------
+

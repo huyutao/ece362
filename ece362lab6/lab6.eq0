@@ -1,0 +1,89 @@
+ispLEVER Classic 1.7.00.05.28.13 Linked Equations File
+Copyright(C), 1992-2013, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design lab6 created Wed Oct 05 19:35:37 2016
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          1        1    Pin   tens_out 
+   1          1        1    Pin   dp_out 
+   4          4        1    Pin   a 
+   7          4        1    Pin   b 
+   5          4        1    Pin   c 
+   6          4        1    Pin   d 
+   5          4        1    Pin   e 
+   4          4        1    Pin   f 
+   4          4        1    Pin   g 
+   1/1        1        1    Pin   irq.AR 
+   1          0        1    Pin   irq.D 
+   1/1        1        1    Pin   irq.C 
+=========
+  40/2          Best P-Term Total: 40
+                       Total Pins: 18
+                      Total Nodes: 0
+            Average P-Term/Output: 3
+
+
+Equations:
+
+tens_out = (!tens_in);
+
+dp_out = (!dp_in);
+
+a = (D3 & !D2 & D1 & D0
+     # D3 & D2 & !D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # !D3 & D2 & !D1 & !D0);
+
+b = (D3 & D2 & D1 & D0
+     # D3 & !D2 & D1 & D0
+     # !D3 & D2 & !D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # D3 & D2 & D1 & !D0
+     # !D3 & D2 & D1 & !D0
+     # D3 & D2 & !D1 & !D0);
+
+c = (D3 & D2 & D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # D3 & D2 & D1 & !D0
+     # !D3 & !D2 & D1 & !D0
+     # D3 & D2 & !D1 & !D0);
+
+d = (D3 & D2 & D1 & D0
+     # !D3 & D2 & D1 & D0
+     # D3 & !D2 & !D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # D3 & !D2 & D1 & !D0
+     # !D3 & D2 & !D1 & !D0);
+
+e = (!D3 & D2 & D1 & D0
+     # !D3 & !D2 & D1 & D0
+     # !D3 & D2 & !D1 & D0
+     # D3 & !D2 & !D1 & D0
+     # !D3 & D2 & !D1 & !D0);
+
+f = (!D3 & D2 & D1 & D0
+     # !D3 & !D2 & D1 & D0
+     # D3 & D2 & !D1 & D0
+     # !D3 & !D2 & D1 & !D0);
+
+g = (!D3 & D2 & D1 & D0
+     # !D3 & !D2 & !D1 & D0
+     # D3 & D2 & !D1 & !D0
+     # !D3 & !D2 & !D1 & !D0);
+
+irq.AR = (iclr);
+
+irq.D = (1);
+
+irq.C = (ireq);
+
+
+Reverse-Polarity Equations:
+
+!irq.AR = (!iclr);
+
+!irq.C = (!ireq);
+
